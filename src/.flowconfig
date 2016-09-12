@@ -1,0 +1,17 @@
+[ignore]
+.*/__tests__.*
+.*/react/node_modules/.*
+.*/fbjs/node_modules/.*
+.*/node_modules/invariant/.*
+
+[include]
+../node_modules/immutable
+
+[options]
+module.system=haste
+esproposal.class_static_fields=enable
+suppress_type=$FlowIssue
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe\\($\\|[^(]\\|(\\(>=0\\.\\(2[0-8]\\|1[0-9]\\|[0-9]\\).[0-9]\\)? *\\).*\n
+
+[version]
+0.32.0
